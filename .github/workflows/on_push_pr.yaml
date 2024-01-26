@@ -1,12 +1,13 @@
 name: Push/PR
 
 on:
-  push:
-    branches:
-      - main
-      - master
-      - renovate/**
-  pull_request:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+  #     - master
+  #     - renovate/**
+  # pull_request:
 
 env:
   TAG: "v0.0.0" # needed for goreleaser windows builds

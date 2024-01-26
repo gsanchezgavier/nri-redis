@@ -6,8 +6,6 @@ name: Trigger prerelease creation
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "30 9 * * 1"
 
 jobs:
   prerelease:

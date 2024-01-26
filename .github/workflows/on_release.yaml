@@ -1,11 +1,12 @@
 name: Create release artifacts
 
 on:
-  release:
-    types:
-      - released
-    tags:
-      - 'v*'
+  workflow_dispatch:
+  # release:
+  #   types:
+  #     - released
+  #   tags:
+  #     - 'v*'
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
